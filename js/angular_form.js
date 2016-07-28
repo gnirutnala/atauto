@@ -31,13 +31,15 @@ formApp.controller('FormController', function ($scope, $http,$timeout) {
         // if not successful, bind errors to error variables
         $scope.error_first_name  = data.errors.first_name;
         $scope.error_last_name   = data.errors.last_name;
-        $scope.error_email      = data.errors.email;
+        $scope.error_email       = data.errors.email;
+        $scope.error_phone_num   = data.errors.phone_num;
       }
       else {
         // Hide errors If exist
         $scope.error_first_name  = "";
         $scope.error_last_name   = "";
         $scope.error_email       = "";
+        $scope.phone_num         = "";
         // if successful, bind success message to message
         $scope.show_success_message        = data.message;
         $timeout(function () { $scope.show_success_message = false; }, 3000);

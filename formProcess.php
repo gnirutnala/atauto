@@ -5,17 +5,20 @@
     {
 		  // validate the variables ========
 		  if (empty($_POST['first_name']))
-			$errors['first_name'] = 'First Name is required.';
+			$errors['first_name'] = 'Make is required.';
 
 		  if (empty($_POST['last_name']))
-			$errors['last_name'] = 'Last Name is required';
+			$errors['last_name'] = 'Model is required';
 
 			if (empty($_POST['email']))
 			$errors['email'] = 'Email is required';
 
+			if (empty($_POST['phone_num']))
+			$errors['phone_num'] = 'Phone number is required';
+
       //new block
-			if (empty($_POST['priceRange']))
-			$errors['priceRange'] = 'Price Range is required';
+			// if (empty($_POST['priceRange']))
+			// $errors['priceRange'] = 'Price Range is required';
 
 		  if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) === false && $_POST['email']!="" ) {
      		$errors['email'] = 'Enter Valid Email';

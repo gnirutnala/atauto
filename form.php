@@ -31,26 +31,37 @@
 
 <form ng-submit="processForm()" id="addRecordForm" method="post">
 
-  <div id="name-group" class="form-group" ng-class="{ 'has-error' : error_first_name }"> 
-    <label>First Name</label> 
-    <input type="text" name="first_name" class="form-control" placeholder="First Name" ng-model="PostformData.first_name"> 
-    <span class="help-block" ng-show="error_first_name">{{ error_first_name }}</span> 
+  <div id="name-group" class="form-group" ng-class="{ 'has-error' : error_first_name }">
+    <label>First Name</label>
+    <input type="text" name="first_name" class="form-control" placeholder="First Name" ng-model="PostformData.first_name">
+    <span class="help-block" ng-show="error_first_name">{{ error_first_name }}</span>
   </div>
 
 
-  <div id="superhero-group" class="form-group" ng-class="{ 'has-error' : error_last_name }"> 
-      <label>Last Name</label> 
-      <input type="text" name="last_name" class="form-control" ng-model="PostformData.last_name" placeholder="Last Name"> 
-      <span class="help-block" ng-show="error_last_name">{{ error_last_name }}</span> 
-  </div>
-  
-    <div id="superhero-group" class="form-group" ng-class="{ 'has-error' : error_email }"> 
-      <label>Email</label> 
-      <input type="text" name="email" class="form-control" ng-model="PostformData.email" placeholder="Email"> 
-      <span class="help-block" ng-show="error_email">{{ error_email }}</span> 
+  <div id="superhero-group1" class="form-group" ng-class="{ 'has-error' : error_last_name }">
+      <label>Last Name</label>
+      <input type="text" name="last_name" class="form-control" ng-model="PostformData.last_name" placeholder="Last Name">
+      <span class="help-block" ng-show="error_last_name">{{ error_last_name }}</span>
   </div>
 
- 
+  <div id="superhero-group2" class="form-group" ng-class="{ 'has-error' : error_email }">
+      <label>Email</label>
+      <input type="text" name="email" class="form-control" ng-model="PostformData.email" placeholder="Email">
+      <span class="help-block" ng-show="error_email">{{ error_email }}</span>
+  </div>
+
+  <div id="superhero-group3" class="form-group">
+      <label>Price Range</label>
+      <!-- <input type="text" name="email" class="form-control" ng-model="PostformData.email" placeholder="Email"> -->
+      <select name="repeatSelect" id="repeatSelect" ng-model="data.model">
+        <option ng-repeat="option in data.availableOptions" value="{{option.id}}">
+          {{option.name}}
+        </option>
+      </select>
+      <!-- <span class="help-block" ng-show="error_email">{{ error_priceRange }}</span> -->
+  </div>
+
+
   <button type="submit" class="btn btn-success btn-lg btn-block">
       <span class="glyphicon glyphicon-flash"></span> Submit !
   </button>

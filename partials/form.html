@@ -1,0 +1,54 @@
+<!--<a href="javascript:void(0)" id="editStudentForm">Edit</a>-->
+<div  class="alert-success" style="height:30px" ng-show="show_success_message">
+  {{ show_success_message }}
+</div>
+
+<div class="col-sm-6" ng-hide="addformtoggle">
+
+<form ng-submit="processForm()" id="addRecordForm" method="post">
+
+  <div id="name-group" class="form-group" ng-class="{ 'has-error' : error_first_name }">
+    <label>Make</label>
+    <input type="text" name="first_name" class="form-control" placeholder="Make" ng-model="PostformData.first_name">
+    <span class="help-block" ng-show="error_first_name">{{ error_first_name }}</span>
+  </div>
+
+  <div id="superhero-group1" class="form-group" ng-class="{ 'has-error' : error_last_name }">
+      <label>Model</label>
+      <input type="text" name="last_name" class="form-control" ng-model="PostformData.last_name" placeholder="Model">
+      <span class="help-block" ng-show="error_last_name">{{ error_last_name }}</span>
+  </div>
+
+  <div id="superhero-group2" class="form-group" ng-class="{ 'has-error' : error_email }">
+      <label>Email</label>
+      <input type="text" name="email" class="form-control" ng-model="PostformData.email" placeholder="Email">
+      <span class="help-block" ng-show="error_email">{{ error_email }}</span>
+  </div>
+
+  <div id="superhero-group3" class="form-group" ng-class="{ 'has-error' : error_phone_num }">
+      <label>Phone Number</label>
+      <input type="text" name="phone_num" class="form-control" ng-model="PostformData.phone_num" placeholder="Phone Number">
+      <span class="help-block" ng-show="error_email">{{ error_phone_num }}</span>
+  </div>
+
+  <div id="superhero-group4" class="form-group">
+      <label>Price Range</label>
+      <!-- <input type="text" name="email" class="form-control" ng-model="PostformData.email" placeholder="Email"> -->
+      <select name="repeatSelect" id="repeatSelect" ng-model="data.model">
+        <option ng-repeat="option in data.availableOptions" value="{{option.id}}">
+          {{option.name}}
+        </option>
+      </select>
+      <!-- <span class="help-block" ng-show="error_email">{{ error_priceRange }}</span> -->
+  </div>
+
+  <button type="submit" class="btn btn-success btn-lg btn-block">
+      <span class="glyphicon glyphicon-flash"></span> Submit !
+  </button>
+</form>
+<!-- SHOW DATA FROM INPUTS AS THEY ARE BEING TYPED -->
+<pre>
+    {{ PostformData }}
+</pre>
+
+</div>

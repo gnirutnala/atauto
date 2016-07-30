@@ -1,2 +1,4 @@
 todo file
 ---------------------------------------------
+
+do I need the sticky footer for any pages?  

@@ -1,4 +1,23 @@
 todo file
 ---------------------------------------------
 
-do I need the sticky footer for any pages?  
+<p>PO Box 6105 667 Fairbanks Street</p>
+<p>Watertown, NY 13601</p>
+
+write media queries that limit the area used for content display on XXL screens
+
+create an app that stores the cars requested and creates a visualization
+
+a:active selects the active link
+
+change nav gradient to start at footer color
+
+change hover on links to a ..?green
+
+learn to do the window static background thing
+
+get a better font
+
+write a media query that pushes the copyrifht line down a bit
+
+do I need form.php anymore? (I converted it to index.html)

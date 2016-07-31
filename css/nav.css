@@ -2,35 +2,18 @@ body {
   padding-top: 20px;
 }
 
-/*.footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-top: 40px;
-  border-top: 1px solid #eee;
-}*/
-
-/* Main marketing message and sign up button */
-/*.jumbotron {
-  text-align: center;
-  background-color: transparent;
-}
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
-}*/
-
-/* Customize the nav-justified links to be fill the entire space of the .navbar */
-
 .nav-justified {
   background-color: #eee;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
 .nav-justified > li > a {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 0;
   font-weight: bold;
+  font-size: 14px;
   color: #ffffff;
   text-align: center;
   background-color: #330000; /* Old browsers */
@@ -42,6 +25,7 @@ body {
   background-repeat: repeat-x; /* Repeat the gradient */
   border-bottom: 1px solid #d5d5d5;
 }
+
 .nav-justified > .active > a,
 .nav-justified > .active > a:hover,
 .nav-justified > .active > a:focus {
@@ -76,7 +60,6 @@ body {
   }
 }
 
-/* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
   .masthead,

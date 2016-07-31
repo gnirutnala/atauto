@@ -1,4 +1,5 @@
 # atauto
-This is a test to make sure that I understand how to push to remote public repos
 
-https://code.angularjs.org/1.2.0/
+This is a website for a small used-auto dealer in upstate ny
+
+It's an AngularJS SPA that is built with bootstrap components

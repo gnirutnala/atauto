@@ -1,14 +1,14 @@
+  google.com/fonts
+
 todo file
 ---------------------------------------------
-
-<p>PO Box 6105 667 Fairbanks Street</p>
-<p>Watertown, NY 13601</p>
 
 write media queries that limit the area used for content display on XXL screens
 
 create an app that stores the cars requested and creates a visualization
 
 a:active selects the active link
+MAKE THE LINKS ABSORB AN ACTIVE CLASS
 
 change nav gradient to start at footer color
 
@@ -24,3 +24,10 @@ do I need form.php anymore? (I converted it to index.html)
 
 Keep in mind that if remote repo gets ahead of local, you must first pull(and merge?)
   before you can push
+
+  https://code.angularjs.org/1.2.0/
+
+improve the car-finder with dropdowns and stuff
+  connect formprocess.php to a mailer-type thing
+
+  make button on form smaller and justify-right

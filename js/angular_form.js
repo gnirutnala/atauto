@@ -1,8 +1,28 @@
 // define angular module/app
-var formApp = angular.module('AngularSubmitForm', []);
+var formApp = angular.module('AngularSubmitForm', ["ngRoute"]);
+
+formApp.config(function($routeProvider) {
+  $routeProvider
+  .when("/", {
+    templateUrl : "partials/home.html"
+    // TODO: DO NOT recycle controller for different pages
+  })
+  .when("/directions", {
+    templateUrl : "partials/directions.html"
+    // TODO: DO NOT recycle controller for different pages
+  })
+  .when("/contact", {
+    templateUrl : "partials/contact.html"
+    // TODO: DO NOT recycle controller for different pages
+  })
+  .when ("/car_finder", {
+    templateUrl : "partials/form.html",
+    controller : "FormController"
+  });
+});
+
 // list students
 formApp.controller('FormController', function ($scope, $http,$timeout) {
-  // Add student form
 
   $scope.model;
   $scope.year;
@@ -47,26 +67,4 @@ formApp.controller('FormController', function ($scope, $http,$timeout) {
     });
   }
 });
-(window.angular);
-
-// (function(angular) {
-  // 'use strict';
-// angular.module('ngrepeatSelect',[])
-  // .controller('ExampleController', ['$scope', function($scope) {
-
-    // $scope.model;
-    // $scope.year;
-    // $scope.priceRange;
-
-    // $scope.data = {
-    //   model: null,
-    //   availableOptions: [
-    //     {id: '1', name: '$1,500-$3,000'},
-    //     {id: '2', name: '$3,000-$5,000'},
-    //     {id: '3', name: '$5,000-$10,000'},
-    //     {id: '4', name: '$10,000-$20,000'}
-    //   ],
-    // };
-
-  // }]);
-// })(window.angular);
+//(window.angular);

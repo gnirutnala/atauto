@@ -21,3 +21,6 @@ get a better font
 write a media query that pushes the copyrifht line down a bit
 
 do I need form.php anymore? (I converted it to index.html)
+
+Keep in mind that if remote repo gets ahead of local, you must first pull(and merge?)
+  before you can push
